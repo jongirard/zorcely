@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :path_names => { :sign_up => 'register' }, :controllers => { :registrations => "registrations", :sessions => 'devise/sessions'}, :skip => [:sessions]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -56,4 +56,15 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  devise_scope :user do
+    get "/register", :to => "registrations#new"
+    get "login" => "devise/sessions#new", :as => :new_user_session
+    post 'login' => 'devise/sessions#create', :as => :user_session
+    delete 'logout' => 'devise/sessions#destroy', :as => :destroy_user_session
+    get "/passwordreset/new" => "devise/passwords#new", :as => :forgot_password
+    get "/confirmation/new" => "devise/confirmations#new", :as => :new_confirmation
+    get "users/billing" => "registrations#billing", :as => :user_billing
+    get "users/account" => "accounts#edit", :as => :user_personal
+    patch "users/account" => "accounts#update"
+  end
 end
