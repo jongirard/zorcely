@@ -6,3 +6,22 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.navigation-top {
+  height: 44px;
+position: absolute;
+width: 100%;
+background-color: #FFFFFF;
+opacity: 1;
+z-index: 5;
+
+  ul.nav.nav-pills {
+    position: relative;
+z-index: 500;
+float: right;
+padding-right: 50px;
+li a {
+  color: #000000;
+  font-size: 16px;
+}
+  }
+}
