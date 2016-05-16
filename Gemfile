@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'high_voltage', '~> 3.0.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'devise'
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
