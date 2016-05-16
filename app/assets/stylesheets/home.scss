@@ -1,0 +1,39 @@
+.home-container {
+
+  .hero-bg {
+    background-color: #000000;
+    .hero-image {
+      background-image: asset-url("creator.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      opacity: 0.7;
+      min-height: 400px;
+
+    }
+  }
+  .summary {
+    position: relative;
+    top: -350px;
+    color: #FFFFFF;
+    max-width: 820px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .hero-call {
+    text-align: center;
+    position: relative;
+    top: -250px;
+    max-width: 920px;
+  }
+}
+.btn-solid.hero-cta {
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  padding: 25px 10px;
+  min-width: 360px;
+  &:hover {
+    opacity: 1;
+  }
+}
