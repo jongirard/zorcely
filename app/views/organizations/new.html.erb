@@ -1,0 +1,18 @@
+<% provide(:title, 'Zorcely - Organization Manager') %>
+<div class="content">
+<%= simple_form_for @organization, :html => {:class => "feature-form debt center-block"} do |f| %>
+				<form role="form">
+					<div class="form-group">
+					<%= f.input :organization_name, label: 'Name Of Organization:', placeholder: 'Ex: Maine Shelter' %>
+					</div>
+				  <div class="form-group">
+				<%= f.input :organization_description, label: 'Description of Organization:', placeholder: '' %>
+				</div>
+				<div class="form-group">
+				<%= f.input :nonprofit_number, label: 'Non profit registered number of organization', placeholder: 'Ex: 100485' %>
+				</div>
+				<%= f.submit "Add Organization", :class => "btn btn-success"%>
+				<% end %>
+
+</form>
+</div>

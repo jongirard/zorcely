@@ -7,12 +7,13 @@ body {
   margin-right: auto;
 }
 .navigation-top {
-  height: 44px;
+  height: 49px;
 position: absolute;
 width: 100%;
 background-color: #FFFFFF;
 opacity: 1;
 z-index: 5;
+padding-top: 3px;
 
   ul.nav.nav-pills {
     position: relative;
@@ -23,5 +24,10 @@ li a {
   color: #000000;
   font-size: 16px;
 }
+  }
+}
+.signup-panel {
+  .organization-name {
+    display: block;
   }
 }

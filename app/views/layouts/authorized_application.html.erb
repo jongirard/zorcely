@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zorcely</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%# Zorcely... are you zerious? %>
+</head>
+<body class="authorized application">
+
+  <div class="navigation-main">
+    <div class="col-md-6">
+      <ul class="nav nav-pills">
+      <li role="presentation"><a href="#">Browse</a></li>
+      <li role="presentation"><%= link_to "Add Organization", new_organization_path %></li>
+      <li role="presentation"><a href="#">View All Active</a></li>
+    </ul>
+    </div>
+    <div class="col-md-6 right">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="#"><%= current_user.fullname %></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+
+
+</body>
+</html>

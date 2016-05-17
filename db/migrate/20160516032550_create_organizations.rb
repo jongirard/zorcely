@@ -1,9 +1,11 @@
 class CreateOrganizations < ActiveRecord::Migration
   def change
     create_table :organizations do |t|
-      t.string :name
+      t.string :guid
+      t.string :organization_name
       t.integer :nonprofit_number
-      t.text :description
+      t.string :cover_photo_url
+      t.text :organization_description
       t.integer :user_id
 
       t.timestamps null: false
