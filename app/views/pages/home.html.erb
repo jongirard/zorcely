@@ -1,4 +1,18 @@
 <div class="home-container">
+
+<div class="navigation-top">
+  <div class="col-md-6">
+
+  </div>
+  <div class="col-md-6">
+    <ul class="nav nav-pills">
+      <li role="presentation"><%= link_to "Browse", anon_organizations_path %></li>
+      <li role="presentation"><%= link_to "Login", new_user_session_path %></li>
+    </ul>
+  </div>
+    </div>
+
+
   <div class="hero-bg">
     <div class="hero-image">
 
@@ -11,10 +25,10 @@
   <div class="container hero-call center">
     <div class="row">
       <div class="col-md-6">
-        <%= link_to "I want to contribute to a project", page_path('about'), class: "btn btn-solid btn-lg hero-cta" %>
+        <%= link_to "I want to contribute to a project", register_path, class: "btn btn-solid btn-lg hero-cta" %>
       </div>
       <div class="col-md-6">
-        <%= link_to "I have a project", page_path('about'), class: "btn btn-solid btn-lg hero-cta" %>
+        <%= link_to "I have a project I need help with", register_path, class: "btn btn-solid btn-lg hero-cta" %>
       </div>
     </div>
   </div>

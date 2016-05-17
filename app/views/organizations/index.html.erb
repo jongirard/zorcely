@@ -1,0 +1,15 @@
+<div class="container organization-list">
+
+Organizations
+
+<% @organizations.each do |organization| %>
+<div class="organization list-item">
+  <div class="name">
+    <%= link_to "#{organization.organization_name}", organization_path(organization) %>
+  </div>
+  <div class="description">
+    <%= organization.organization_summary%>
+  </div>
+</div>
+<% end %>
+</div>

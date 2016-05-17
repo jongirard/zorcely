@@ -1,0 +1,27 @@
+.authorized {
+  .navigation-main {
+    height: 46px;
+    background-color: rgb(222, 88, 72);
+    padding-top: 3px;
+    ul.dropdown-menu {
+      li a {
+        color: #d44332;
+      }
+    }
+    li a {
+      color: #FFFFFF;
+      &:hover {
+        color: #d44332;
+
+      }
+    }
+    .right ul {
+      float:right;
+    }
+  }
+  .projects-listing {
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+  }
+}

@@ -1,0 +1,349 @@
+.top {
+min-height: 635px;
+width: 100%;
+min-width: 1200px;
+background-size: cover;
+background-color: #E8E9F1;
+background-image: asset-url("cover.jpg");
+position: relative;
+z-index: 1;
+}
+.bottom {
+-moz-box-shadow: 0px -20px 25px -25px rgba(0, 0, 0, 0.05);
+-webkit-box-shadow: 0px -20px 25px -25px rgba(0, 0, 0, 0.05);
+box-shadow: 0px -20px 25px -25px rgba(0, 0, 0, 0.05);
+min-height: 100%;
+height: 100%;
+padding-top: 85px;
+padding-bottom: 30px;
+position: relative;
+z-index: 9999;
+background-color: #F9FAFF;
+width: 100%;
+min-width: 1200px;
+-webkit-transform: translate3d(0,0,0);
+}
+.container.upper {
+position: relative;
+top: 200px;
+}
+.container.upper .row .col-xs-12 {
+padding-top: 0px;
+}
+.container.middle {
+height: 300px;
+}
+.col-md {
+max-width: none !important;
+}
+.row {
+text-align: center;
+}
+.bs-masthead.pricing h1 {
+color: #FFFFFF;
+font-weight: normal;
+font-size: 32px;
+font-family: proxima_nova_rgregular, Helvetica Neue, Helvetica, Arial, sans-serif;
+line-height: 50px;
+text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+margin-bottom: 20px;
+padding: 6px;
+
+}
+.bs-masthead.pricing h1 {
+	color: #6F6B92;
+	text-shadow: none;
+}
+.h2-info.plans .highlight {
+color: #8789BB;
+}
+.bs-masthead.pricing h2 {
+color: #4A5B79;
+font-weight: normal;
+font-size: 19px;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+text-align: left;
+padding-bottom: 10px;
+}
+.h2-info {
+color: #96A2B3;
+font-weight: normal;
+font-size: 17px;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+text-align: left;
+width: 90%;
+line-height: 30px;
+padding-bottom: 30px;
+}
+.bs-masthead .container.upper .col-xs-12 {
+	padding: 0px;
+}
+.bs-masthead .container.upper .col-xs-6 {
+padding: 8px;
+}
+.bs-masthead .container.upper .row {
+padding-top: 18px;
+}
+.bs-masthead .container.lower .row {
+width: 1125px;
+margin-left: auto;
+}
+.bs-masthead .container.lower .col-xs-4.left {
+
+}
+.bs-masthead .container.lower .col-xs-4.center {
+padding-left: 30px;
+}
+.bs-masthead .container.lower .col-xs-4.right{
+padding-right: 35px;
+}
+.bs-masthead .footer .row.footer {
+padding-left: 55px;
+}
+.bs-masthead .footer .row.footer .col-xs-6.columns {
+	text-align: right;
+	position: relative;
+	right: 40px;
+}
+.container.footer {
+padding-bottom: 25px;
+}
+.footer .container.footer .content.h2-info {
+color: #D1D9E5;
+}
+
+main.bs-masthead.pricing .container.upper {
+	padding-top: 100px;
+	top: 0px;
+}
+main.bs-masthead.pricing .top {
+overflow-y: hidden;
+z-index: inherit;
+min-height: 840px;
+background-image: none;
+background-color: #F9FAFF;
+}
+main.bs-masthead.pricing .container.middle {
+height: 390px;
+position: relative;
+z-index: 500;
+left: -5px;
+}
+main.bs-masthead.pricing .bottom {
+top: -140px;
+z-index: 0;
+padding-top: 140px;
+border-top: 1px solid #FFFFFF;
+box-shadow: 0px -5px 25px 0px rgba(0, 0, 0, 0.05);
+-webkit-box-shadow: 0px -5px 25px 0px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: 0px -5px 25px 0px rgba(0, 0, 0, 0.05);
+margin-bottom: -138px;
+padding-bottom: 120px;
+}
+main.bs-masthead.pricing .container.middle .col-xs-6 {
+padding: 0px;
+}
+main.bs-masthead.pricing .container.middle .col-xs-6.right {
+top: -53px;
+left: -1px;
+}
+main.bs-masthead.pricing .container.middle .plans {
+width: 826px;
+height: 642px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 100px;
+font-family: proxima_nova_rgregular, Helvetica Neue, Helvetica, Arial, sans-serif;
+text-align: center;
+}
+main.bs-masthead.pricing .plans .plan {
+-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+border: 1px solid #E0E0E0;
+color: #BFC6D1;
+font-size: 16px;
+}
+main.bs-masthead.pricing .plans p.strikethrough {
+font-size: 22px;
+text-decoration: line-through;
+}
+main.bs-masthead.pricing .plans .plan.core {
+width: 270px;
+height: 440px;
+background-color: #F8FBFF;
+float: right;
+}
+main.bs-masthead.pricing .plans .plan.plus {
+width: 280px;
+height: 513px;
+background-color: #FBFDFF;
+float: left;
+padding-top: 12px;
+}
+.plans .plan .header {
+margin: 10px 20px;
+border-bottom: 1px solid #DFE5EE;
+}
+.plans .plan p.identifier {
+padding-bottom: 10px;
+}
+.plans .plan span.sub, .plans .plan span.monthly, .plans .plan p.identifier {
+font-size: 20px;
+color: #485A79;
+position: relative;
+}
+.plans .plan span.sub {
+top: -15px;
+left: -4px;
+}
+.plans .plan.core span.monthly {
+top: 0px;
+left: -4px;
+}
+.plans .plan span.price {
+font-size: 55px;
+color: #485A79;
+}
+
+.plans .plan ul {
+list-style-type: none;
+line-height: 34px;
+padding-left: 0px;
+padding-bottom: 25px;
+}
+main.bs-masthead.pricing .btn-solid {
+font-size: 18px;
+float: none;
+top: 20px;
+background-color: #e8ecf6;
+color: #6d9add;
+  &:hover {
+    background-color: #f4f7ff;
+
+  }
+}
+.plans .plan .glyphicon-question-sign, .plans .plan .glyphicon-question-sign {
+padding-left: 6px;
+vertical-align: text-top;
+color: #BFC6D1;
+text-decoration: none;
+}
+main.bs-masthead.pricing .container.lower .row.plans-additional {
+width: auto;
+margin-bottom: 60px;
+}
+main.bs-masthead.pricing .container.lower .row.plans-additional .h2-info.plans {
+margin-left: -6px;
+text-align: center;
+width: 100%;
+padding-top: 30px;
+}
+main.bs-masthead.pricing.register .top {
+	min-height: 876px;
+}
+main.bs-masthead.pricing.register .bottom {
+	margin-top: -176px;
+	margin-bottom: 0px;
+	padding-bottom: 146px;
+	top: 0px;
+	bottom: 0px;
+}
+main.bs-masthead.pricing.register .container.middle {
+	top: -500px;
+}
+main.bs-masthead.pricing.register .container.middle .plans {
+	width: 700px;
+	padding-top: 80px;
+}
+main.bs-masthead.pricing.register .plans .plan.register {
+	padding: 0px;
+	background-color: #FBFDFF;
+}
+main.bs-masthead.pricing.register .plans select {
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 14px;
+	border: 1px solid #cccccc;
+	background: asset-url("dropdown-arrows.png") no-repeat 98% center #fff;
+	-webkit-appearance: button;
+}
+main.bs-masthead.pricing.register form#new_user .form-control {
+	font-size: 16px;
+	height: 48px !important;
+	margin-bottom: 25px;
+}
+main.bs-masthead.pricing.register form#new_user .fields {
+padding-top: 40px;
+padding-left: 40px;
+padding-right: 40px;
+padding-bottom: 10px;
+}
+main.bs-masthead.pricing.register .form-complete {
+	padding-bottom: 30px;
+	padding-top: 15px;
+	border-top: 1px solid rgb(231, 231, 231);
+}
+main.bs-masthead.pricing.register .form-complete .terms {
+	margin-bottom: 10px;
+}
+main.bs-masthead.pricing.register form#new_user .form-group.country {
+	margin-bottom: 5px;
+}
+main.bs-masthead.pricing.register form#new_user .form-group.country .form-control {
+	margin-bottom: 10px;
+}
+main.bs-masthead.pricing.register form#new_user .form-group.state .form-control {
+	margin-bottom: 0px;
+}
+main.bs-masthead.pricing.register form#new_user input#user_password {
+	margin-top: 25px;
+}
+main.bs-masthead.pricing.register .plan.register form#new_user .form-group {
+	margin-bottom: 10px;
+}
+main.bs-masthead.pricing.register .plan.register form#new_user .form-group span.help-inline {
+	position: relative;
+	top: -10px;
+	color: rgb(224, 102, 102);
+}
+main.bs-masthead.pricing.register .form-group label {
+	margin-bottom: 10px;
+	float: left;
+}
+main.bs-masthead.pricing.register form#new_user .btn {
+	float: none;
+}
+main.bs-masthead.pricing.register span.terms a {
+	color: #837DB1;
+}
+main.bs-masthead.pricing.register span.terms a:hover {
+	color: #6F6B92;
+}
+main.bs-masthead.pricing.register.terms {
+	font-family: proxima_nova_rgregular, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+}
+main.bs-masthead.pricing.register.terms .row .terms {
+	width: 800px;
+	text-align: left;
+	color: #777777;
+	margin-bottom: 150px;
+}
+main.bs-masthead.pricing.register.terms .row .terms h1 {
+	padding: 0px;
+	margin-left: -2px;
+}
+main.bs-masthead.pricing.register.terms .row .terms h2 {
+	color: #6F6B92;
+}
+main.bs-masthead.pricing.register.terms .row .terms span.darker {
+	color: #000000;
+}
+main.bs-masthead.pricing.register.terms .row .terms ul li {
+	list-style-type: decimal;
+}
+main.bs-masthead.pricing .container.lower {
+  padding-bottom: 50px;
+}

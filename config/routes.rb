@@ -17,6 +17,14 @@ Rails.application.routes.draw do
 
   root 'high_voltage/pages#show', id: 'home'
 
+  authenticated :user do
+      resources :projects
+      resources :organizations
+      root :to => "projects#index", :as => "authenticated_root"
+    end
+    get "/organizations/" => "organizations#index", :as => :anon_organizations
+    get "/organizations/:guid/" => "organizations#show", :as => :guid_organization
+
   # Example resource route with options:
   #   resources :products do
   #     member do

@@ -1,0 +1,20 @@
+<div class="container projects-listing">
+  <div class="row center">
+  <% if @organizations.blank? %>
+  You currently have no organizations. To begin, click Add Organization.
+  <% else %>
+  My Organizations
+
+  <% @organizations.each do |organization| %>
+  <div class="organization list-item">
+    <div class="name">
+      <%= link_to "#{organization.organization_name}", organization_path(organization) %>
+    </div>
+    <div class="description">
+      <%= organization.organization_summary%>
+    </div>
+  </div>
+  <% end %>
+  <%end%>
+  </div>
+</div>
