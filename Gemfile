@@ -35,11 +35,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'high_voltage', '~> 3.0.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
+
 gem 'figaro'
 gem 'simple_form'
 
 gem "refile", require: "refile/rails"
 gem "refile-mini_magick"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

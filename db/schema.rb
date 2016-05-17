@@ -23,7 +23,10 @@ ActiveRecord::Schema.define(version: 20160517083403) do
     t.integer  "user_id"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+<<<<<<< HEAD
     t.string   "company_logo_id"
+=======
+>>>>>>> 978e07b1d98f160fc4afdd88ed67624b9788f88a
   end
 
   create_table "users", force: :cascade do |t|
