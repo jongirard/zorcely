@@ -1,0 +1,185 @@
+.bs-secondaryhead .outer-box-transparent {
+background-color: #FFFFFF;
+width: 469px;
+min-height: 350px;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+margin-top: 17px;
+padding: 16px;
+border-radius: 13px;
+border: 1px solid #EAEAEA;
+-moz-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.02);
+-webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.02);
+box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.02);
+}
+
+.container.secondary {
+width: 750px;
+
+}
+.bs-secondaryhead .logo {
+margin-top: 100px;
+}
+main.bs-secondaryhead {
+background-color: #EDF1FA;
+position: relative;
+height: 100%;
+min-height: 100%;
+background-size: 485px 485px;
+background-image: asset-url("bg_texture.png");
+background-repeat: repeat;
+}
+main.bs-secondaryhead .container.secondary form {
+width: 437px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 35px;
+padding-bottom: 90px;
+}
+main.bs-secondaryhead .form-group {
+width: 437px;
+}
+main.bs-secondaryhead .form-group .controls input {
+height: 62px;
+display: inline;
+}
+main.bs-secondaryhead .form-control {
+border: 2px solid #E3E6EE;
+background-color: #FDFDFF;
+box-shadow: none;
+-webkit-box-shadow: none;
+border-radius: 5px;
+}
+main.bs-secondaryhead form#new_user input#user_email, main.bs-secondaryhead form#edit_user input#user_email, main.bs-secondaryhead form#new_user input#user_password, main.bs-secondaryhead form#edit_user input#user_password, main.bs-secondaryhead form#new_user input#user_password_confirmation, main.bs-secondaryhead form#edit_user input#user_password_confirmation, main.bs-secondaryhead form#new_user input#user_fullname {
+height: 62px;
+font-size: 20px;
+font-family: proxima_nova_rgregular, Helvetica Neue, Helvetica, Arial, sans-serif;
+color: #AEB3C5;
+}
+main.bs-secondaryhead form#new_user input::-webkit-input-placeholder {
+color: #AEB3C5;
+}
+main.bs-secondaryhead form#new_user input:-moz-input-placeholder {
+color: #AEB3C5;
+}
+main.bs-secondaryhead form#new_user input::-moz-input-placeholder {
+color: #AEB3C5;
+}
+main.bs-secondaryhead form#new_user input:-ms-input-placeholder {
+color: #AEB3C5;
+}
+main.bs-secondaryhead .form-group label {
+font-family: proxima_nova_rgregular, Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 18px;
+font-weight: normal;
+color: #959EB5;
+float: left;
+}
+main.bs-secondaryhead .forgot-password-signup-container {
+position: relative;
+top: 20px;
+color: #696969;
+}
+main.bs-secondaryhead .forgot-password-signup-container a.forgot {
+color: #7274A3;
+}
+main.bs-secondaryhead .forgot-password-signup-container a.forgot:hover {
+color: #4D4A53;
+text-decoration: none;
+}
+main.bs-secondaryhead .note {
+font-size: 20px;
+font-weight: 500;
+color: #8B8DAF;
+padding-top: 10px;
+}
+main.bs-secondaryhead .note-sub {
+font-size: 17px;
+padding: 15px 10px;
+color: #8A8A8A;
+}
+.alert {
+margin-bottom: 0px;
+}
+.alert #flash_alert, .alert #flash_error, .alert #flash_notice {
+text-align: center;
+}
+main.bs-secondaryhead form#new_user .btn, main.bs-secondaryhead form#edit_user .btn {
+font-size: 28px;
+font-family: proxima_nova_rgregular, Helvetica Neue, Helvetica, Arial, sans-serif;
+float: left;
+margin-top: 15px;
+}
+main.bs-secondaryhead .btn.btn-solid {
+float: left;
+margin-top: 20px;
+color: #F4F7FF;
+border-radius: 5px;
+background-color: #7274A3;
+border: 2px solid #686A98;
+width: 437px;
+height: 75px;
+}
+main.bs-secondaryhead .btn.btn-solid:hover {
+background-color: #6B6EA5;
+}
+main.bs-secondaryhead .form-group.password {
+padding-top: 15px;
+}
+.inner-box span.help-inline {
+position: absolute;
+right: -90px;
+margin-top: 15px;
+padding: 8px 9px;
+background: #d63969;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+color: #fff;
+font-family: 'helvetica neue',helvetica,arial,sans-serif;
+font-size: 13px;
+font-weight: 500;
+text-align: center;
+z-index: 100;
+min-width: 110px;
+box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.inner-box span.help-inline:after {
+bottom: 11px;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+border-right-color: #d63969;
+border-width: 5px;
+left: -5px;
+margin-left: -5px;
+}
+.note-sub span.help-inline {
+position: relative;
+right: 0px;
+}
+.outside-container span.help-inline {
+position: relative;
+padding: 8px 9px;
+background: #d63969;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+color: #fff;
+font-family: 'helvetica neue',helvetica,arial,sans-serif;
+font-size: 13px;
+font-weight: 500;
+text-align: center;
+z-index: 100;
+min-width: 110px;
+box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+top: 20px;
+}

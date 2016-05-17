@@ -1,6 +1,7 @@
 class OrganizationsController < ApplicationController
   layout "authorized_application"
   before_filter :check_id_guid, only: :show
+
   def new
     @organization = Organization.new
   end
@@ -15,6 +16,16 @@ class OrganizationsController < ApplicationController
   end
   end
 
+  def edit
+    @organization = Organization.find(params[:id])
+  end
+
+  def update
+    @organization = Organization.find(params[:id])
+    @organization.update(secure_params)
+      redirect_to :organizations
+  end
+
   def show
     @user = current_user
   end
@@ -26,7 +37,9 @@ class OrganizationsController < ApplicationController
   private
 
   def secure_params
-    params.required(:organization).permit(:organization_name, :nonprofit_number, :organization_description, :organization_summary)
+
+    params.required(:organization).permit(:organization_name, :nonprofit_number, :organization_description, :organization_summary, :company_logo)
+
   end
 
   def check_id_guid
