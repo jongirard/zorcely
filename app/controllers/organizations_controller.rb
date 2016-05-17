@@ -1,6 +1,6 @@
 class OrganizationsController < ApplicationController
   layout "authorized_application"
-  before_filter :check_id_guid, :only => :show
+  before_filter :check_id_guid, only: :show
   def new
     @organization = Organization.new
   end
@@ -19,18 +19,21 @@ class OrganizationsController < ApplicationController
     @user = current_user
   end
 
+  def index
+    @organizations = Organization.all
+  end
+
   private
 
   def secure_params
-    params.required(:organization).permit(:organization_name, :nonprofit_number, :organization_description)
+    params.required(:organization).permit(:organization_name, :nonprofit_number, :organization_description, :organization_summary)
   end
 
   def check_id_guid
-    #@organization = Organization.find(params[:id])
-    if Organization.where(:guid => params[:guid]).exists?
-      @organization = Organization.find_by_guid(params[:guid])
+    if Organization.where(:guid => params[:id]).exists?
+      @organization = Organization.find_by_guid(params[:id])
     else
-        @organization = Organization.find(params[:guid])
+        @organization = Organization.find_by_id(params[:id])
       end
   end
 

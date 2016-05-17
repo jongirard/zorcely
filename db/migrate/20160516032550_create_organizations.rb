@@ -5,6 +5,7 @@ class CreateOrganizations < ActiveRecord::Migration
       t.string :organization_name
       t.integer :nonprofit_number
       t.string :cover_photo_url
+      t.text :organization_summary
       t.text :organization_description
       t.integer :user_id
 

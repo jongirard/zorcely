@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160516032550) do
     t.string   "organization_name"
     t.integer  "nonprofit_number"
     t.string   "cover_photo_url"
+    t.text     "organization_summary"
     t.text     "organization_description"
     t.integer  "user_id"
     t.datetime "created_at",               null: false
