@@ -1,16 +1,38 @@
-<h2>Forgot your password?</h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="home-container">
+<div class="password-image">
 
-  <div class="field">
+<center> <%= image_tag("ClearZorcely.png", size: "200x200") %> </center>
+
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="card"></div>
+    <div class="card">
+
+<center> <h3>Reset Your Password</h3> </center>
+
+<div>
+
+
+ <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+<div> <%= devise_error_messages! %> <div>
+
+
+
+<div class="input-container">
+  <center> <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true  %>
+
+
+  <%= f.submit "Reset Password" %>
+      <center class="bar"></center>
+
+
   </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
+
 <% end %>
-
-<%= render "devise/shared/links" %>
