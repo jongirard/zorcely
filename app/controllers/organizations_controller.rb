@@ -27,10 +27,6 @@ class OrganizationsController < ApplicationController
   end
 
   def show
-    #@user = current_user
-    #@organization = Organization.find(params[:id])
-
-  def show
     @user = current_user
   end
 

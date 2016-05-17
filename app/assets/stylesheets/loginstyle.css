@@ -1,13 +1,4 @@
-body {
 
-  font-family: 'Helve', 'Roboto', sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-    background: url(../img/backs.png) 100%;
-
-}
 
 /* Pen Title */
 
@@ -91,7 +82,7 @@ body {
 }
 
 /* Container */
-.container {
+.container.login {
   position: relative;
   max-width: 460px;
   width: 100%;
