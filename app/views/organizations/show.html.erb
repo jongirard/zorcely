@@ -1,13 +1,30 @@
-<p>
-Organization Name: <%= @organization.organization_name %>
-</p>
-<p>
-Organization Number: <%= @organization.nonprofit_number %>
-</p>
-<p>
-  <p>
-    Organization Summary: <%= @organization.organization_summary %>
-  </p>
-</p>
-Organization Full Description: <%= @organization.organization_description %>
-</p>
+<div class="organization cover">
+  <div class="row center">
+    <%= image_tag attachment_url(@organization, :company_logo, :fill, 0, 120, format: "jpg") %>
+  </div>
+</div>
+
+<div class="organization container below-cover">
+  <div class="organization name">
+    <%= @organization.organization_name %>
+  </div>
+
+  <div class="organization summary">
+    <div class="title">
+      Summary:
+    </div>
+    <div class="block">
+      <%= @organization.organization_summary %>
+    </div>
+  </div>
+
+  <div class="organization description">
+    <div class="title">
+      Description:
+    </div>
+    <%= @organization.organization_description %>
+  </div>
+
+  <%= link_to "Edit", edit_organization_path %>
+
+</div>

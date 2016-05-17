@@ -23,7 +23,7 @@ Rails.application.routes.draw do
       root :to => "projects#index", :as => "authenticated_root"
     end
     get "/organizations/" => "organizations#index", :as => :anon_organizations
-    get "/organizations/:guid/" => "organizations#show", :as => :guid_organization
+    get "/organizations/:id/" => "organizations#show", :as => :guid_organization
 
   # Example resource route with options:
   #   resources :products do

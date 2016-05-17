@@ -1,4 +1,33 @@
 .container.organization-list {
-  position: relative;
-  top: 50px;
+
+}
+.organization.container {
+    &.below-cover {
+      max-width: 1010px;
+    }
+    .name {
+      font-size: 24px;
+    }
+    .summary {
+      font-size: 18px;
+      .title {
+        padding: 10px 0px;
+        font-size: 16px;
+      }
+      .block {
+        background-color: #edf0f9;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    .description {
+      font-size: 17px;
+      line-height: 32px;
+      padding-bottom: 50px;
+      .title {
+        font-size: 16px;
+        padding: 10px 0px;
+      }
+    }
 }
