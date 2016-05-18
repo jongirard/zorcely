@@ -1,10 +1,7 @@
 
-
-
-
-<center> <button class="btn waves-effect white">
+ <center> <button class="btn waves-effect white">
   <%= link_to "Add Project", new_project_path(:organization_id => "#{@organization.id}") %>
- <button> </center>
+ </center>
 
 
 
@@ -17,9 +14,9 @@
 </div>
 
 <div class="card">
-<h3 class="header center orange-text text-lighten-2">About us</h3> </div>
+<h3 class="header center orange-text text-lighten-2">About</h3> </div>
 <div class="card">
-<center>  <h3> Organization:  <%= @organization.organization_name %>  <h3> </center>
+<center>  <h3> <%= @organization.organization_name %>  <h3> </center>
 
 <div class="organization container below-cover">
 
@@ -28,19 +25,20 @@
   </div>
 
 
+
   <center> <div class="organization summary"> </center>
 <center  <div class="title">
-      Summary:
-
+  <center>  Startup Summary </center>
 
 
     </div>
     <div class="block">
- <center>  <%= @organization.organization_summary %> </center>
+ <center>  <h5> <%= @organization.organization_summary %> <h5> </center>
 
 
- <div class="card">
- <div class="card">
+ <div>
+ <div>
+
 
     </div>
   </div>
@@ -50,10 +48,10 @@
 <center>  <div class="organization description"> </center>
 <center    <div class="title">
 
-    Description:
+    Description
 
     </div>
-<center>   <%= @organization.organization_description %> </center>
+<center> <h5>  <%= @organization.organization_description %> <h5> </center>
   </div>
 
   <div class="card">
@@ -62,20 +60,20 @@
 
 <center>  <div class="organization projects"> </center>
   <center  <div class="title">
-      Projects:
+      Projects
     </div>
 
     <div class="card">
 
 
-  <center>   <% @organization.projects.each do |project| %> </center>
-    <center> <%= link_to "#{project.project_name}", project_path(project) %> </center>
-  <center>   <%= project.project_summary %> </center>
+  <center>  <h5> <% @organization.projects.each do |project| %> <h5> </center>
+    <center> <h5> <%= link_to "#{project.project_name}", project_path(project) %> <h5> </center>
+  <center>  <h5> <%= project.project_summary %> <h5> </center>
     <% end %>
 
   </div>
 
 
-<center>  <%= link_to "Edit", edit_organization_path %> </center>
+ <center> <button class="btn waves-effect white"> <%= link_to "Edit", edit_organization_path %> </center>
 
 </div>
