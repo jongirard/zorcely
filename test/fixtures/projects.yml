@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_name: MyString
+  project_summary: MyText
+  project_description: MyText
+  resource_requirements: MyString
+  in_kind: MyString
+  volunteer_amount: 1
+  project_value: 9.99
+
+two:
+  project_name: MyString
+  project_summary: MyText
+  project_description: MyText
+  resource_requirements: MyString
+  in_kind: MyString
+  volunteer_amount: 1
+  project_value: 9.99

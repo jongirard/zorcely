@@ -1,0 +1,31 @@
+<% provide(:title, 'Zorcely - Project Manager') %>
+<div class="content">
+<%= simple_form_for @project, :html => {:class => "feature-form debt center-block"} do |f| %>
+				<form role="form">
+					<div class="form-group">
+					<%= f.input :project_name, label: 'Name Of Project:', placeholder: 'Ex: Blood Drive' %>
+					</div>
+          <div class="form-group">
+				<%= f.input :project_summary, label: 'Short summary of Project:', placeholder: 'Should be 2 lines or less in length' %>
+				</div>
+				  <div class="form-group">
+				<%= f.input :project_description, label: 'Description of Project:', placeholder: '' %>
+				</div>
+				<div class="form-group">
+			<%= f.input :resource_requirements, label: 'Required Resources Type:', placeholder: 'Ex: Volunteer/Expertise' %>
+			</div>
+			<div class="form-group">
+		<%= f.input :in_kind, label: 'Specify In Kind:', placeholder: 'Ex: Contribution' %>
+		</div>
+		<div class="form-group">
+	<%= f.input :volunteer_amount, label: 'Number of Volunteers Needed:', placeholder: 'Ex: 15' %>
+	</div>
+	<div class="form-group">
+<%= f.input :project_value, label: 'Project Value:', placeholder: 'Ex: 30,000' %>
+</div>
+
+				<%= f.submit "Add Organization", :class => "btn btn-success"%>
+				<% end %>
+
+</form>
+</div>

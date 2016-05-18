@@ -25,7 +25,6 @@ class OrganizationsController < ApplicationController
     @organization.update(secure_params)
       redirect_to :organizations
   end
-
   def show
     @user = current_user
   end
