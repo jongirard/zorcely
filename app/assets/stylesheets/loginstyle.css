@@ -16,10 +16,10 @@
   font-size: 12px;
 }
 .pen-title span .fa {
-  color: #4F8BFF;
+  color: #FDBE45;
 }
 .pen-title span a {
-  color: #4F8BFF;
+  color: #FDBE45;
   font-weight: 600;
   text-decoration: none;
 }
@@ -32,7 +32,7 @@
 .rerun a {
   cursor: pointer;
   display: inline-block;
-  background: #4F8BFF;
+  background: #FDBE45;
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 10px 20px;
@@ -50,7 +50,7 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: #4F8BFF;
+  background: #FDBE45;
   width: 56px;
   height: 56px;
   border-radius: 100%;
@@ -71,7 +71,7 @@
 #portfolio {
   bottom: 96px;
   right: 36px;
-  background: #4F8BFF;
+  background: #FDBE45;
   width: 44px;
   height: 44px;
   -webkit-animation: buttonFadeInUp 1s ease;
@@ -89,11 +89,11 @@
   margin: 0 auto 100px;
 }
 .container.active .card:first-child {
-  background: #4F8BFF;
+  background: #FDBE45;
   margin: 0 15px;
 }
 .container.active .card:nth-child(2) {
-  background: #4F8BFF;
+  background: #FDBE45;
   margin: 0 10px;
 }
 .container.active .card.alt {
@@ -168,7 +168,7 @@
   /* Alt Card */
 }
 .card:first-child {
-  background: #4F8BFF;
+  background: #FDBE45;
   height: 0px;
   border-radius: 5px 5px 0 0;
   margin: 0 10px;
@@ -177,10 +177,10 @@
 .card .title {
   position: relative;
   z-index: 1;
-  border-left: 0px solid #4F8BFF;
+  border-left: 0px solid #FDBE45;
   margin: 0 0 35px;
   padding: 10px 0 10px 50px;
-  color: #4F8BFF;
+  color: #FDBE45;
   font-size: 32px;
   font-weight: 600;
   text-transform: uppercase;
@@ -197,7 +197,7 @@
   width: 100%;
   height: 60px;
   border: 0;
-  color: #4F8BFF;
+  color: #FDBE45;
   font-size: 24px;
   font-weight: 400;
 }
@@ -236,7 +236,7 @@
 .card .input-container .bar:before, .card .input-container .bar:after {
   content: '';
   position: absolute;
-  background: #4F8BFF;
+  background: #FDBE45;
   width: 0;
   height: 2px;
   -webkit-transition: .2s ease;
@@ -259,7 +259,7 @@
   display: inline-block;
   background: 0;
   width: 240px;
-  border: 2px solid #4F8BFF;
+  border: 2px solid #FDBE45;
   padding: 20px 0;
   font-size: 24px;
   font-weight: 600;
@@ -272,7 +272,7 @@
 .card .button-container button span {
   position: relative;
   z-index: 1;
-  color: #4F8BFF;
+  color: #FDBE45;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -282,7 +282,7 @@
   top: 50%;
   left: 50%;
   display: block;
-  background: #4F8BFF;
+  background: #FDBE45;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -292,10 +292,10 @@
   transition: .3s ease;
 }
 .card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
-  border-color: #4F8BFF;
+  border-color: #FDBE45;
 }
 .card .button-container button:hover span, .card .button-container button:active span, .card .button-container button:focus span {
-  color: #4F8BFF;
+  color: #FDBE45;
 }
 .card .button-container button:active span, .card .button-container button:focus span {
   color: #ffffff;
@@ -409,7 +409,7 @@
   border-color: #ffffff;
 }
 .card.alt .button-container button span {
-  color: #4F8BFF;
+  color: #FDBE45;
 }
 .card.alt .button-container button:hover {
   background: rgba(255, 255, 255, 0.9);

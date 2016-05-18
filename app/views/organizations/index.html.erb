@@ -1,15 +1,37 @@
 
+
+  <h2 class="header center white-text text-lighten-2"></h2>
+
+
+  <div class="card">   <h3 class="header center orange-text text-lighten-2">Explore Organizations</h3> </div>
+
+  <div class="card">
+
+    <div class="fixed-action-btn horizontal" style="bottom: 40px; right: 140px;">
+        <a class="btn-floating btn-large light-blue">
+          <i class="large material-icons">+</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">+</i></a></li>
+        </ul>
+      </div>
+
 <div class="organization-list">
 
-Organizations
 
-<% @organizations.each do |organization| %>
+ <% @organizations.each do |organization| %>
 <div class="organization list-item">
   <div class="name">
-    <%= link_to "#{organization.organization_name}", organization_path(organization) %>
+  <center> <h5>  Organization Name  <%= link_to "#{organization.organization_name}", organization_path(organization) %> </h5> </center>
   </div>
+
+  <div class="container login">
+    <div class="card"></div>
+    <div class="card">
+
+
   <div class="description">
-    <%= organization.organization_summary%>
+    <center>  <h5> <%= organization.organization_summary%>  </h5> </center>
   </div>
 </div>
 <% end %>

@@ -1,31 +1,53 @@
   <%= link_to "Add Project", new_project_path(:organization_id => "#{@organization.id}") %>
 
+
+
+
+
 <div class="organization cover">
   <div class="row center">
-    <%= image_tag attachment_url(@organization, :company_logo, :fill, 0, 120, format: "jpg") %>
+     <%= image_tag attachment_url(@organization, :company_logo, :fill, 0, 120, format: "jpg") %>
   </div>
 </div>
 
+<div class="card">
+<h3 class="header center orange-text text-lighten-2">About us</h3> </div>
+<div class="card">
+<center>  <h3> Organization:  <%= @organization.organization_name %>  <h3> </center>
+
 <div class="organization container below-cover">
+
   <div class="organization name">
-    <%= @organization.organization_name %>
+
   </div>
 
-  <div class="organization summary">
-    <div class="title">
+
+  <center> <div class="organization summary"> </center>
+<center  <div class="title">
       Summary:
+
     </div>
     <div class="block">
-      <%= @organization.organization_summary %>
+ <center>  <%= @organization.organization_summary %> </center>
+
+
+ <div class="card">
+ <div class="card">
+
     </div>
   </div>
 
-  <div class="organization description">
-    <div class="title">
-      Description:
+
+
+<center>  <div class="organization description"> </center>
+<center    <div class="title">
+
+    Description:
+
     </div>
-    <%= @organization.organization_description %>
+<center>   <%= @organization.organization_description %> </center>
   </div>
+
 
   <div class="organization projects">
     <div class="title">
@@ -38,6 +60,7 @@
 
   </div>
 
-  <%= link_to "Edit", edit_organization_path %>
+
+<center>  <%= link_to "Edit", edit_organization_path %> </center>
 
 </div>

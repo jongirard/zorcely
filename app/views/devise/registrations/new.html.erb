@@ -2,18 +2,38 @@
 
 </div>
 
+    <div class="home-container">
+      <div class="login-image">
+
+
+        <center> <%= image_tag("ClearZorcely.png", size: "200x200") %> </center>
+
+        <h3 class="header center white-text text-lighten-2">Create a account</h3>
+
+
+
 <div class="signup-panel">
+  <div class="container login">
+    <div class="card"></div>
+    <div class="card">
 
-<h2>Sign up</h2>
 
+
+
+<div class="input-container" >
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
+
 
 <div class="names-register">
 
   <div class="field">
     <%= f.input :first_name, label: false, placeholder: 'First Name' %>
+      <center class="bar"> </center>
   </div>
+
+
+
 
   <div class="field">
     <%= f.input :last_name, label: false, placeholder: 'Last Name' %>
@@ -21,7 +41,8 @@
 </div>
 
   <div class="field">
-    <%= f.input :email, label: false, placeholder: 'Email Address' %>
+    <%= f.input :email, label: false, placeholder: 'Email' %>
+    <center class="bar"> </center>
   </div>
 
   <div class="field">
@@ -35,10 +56,11 @@
     <%= f.input :password_confirmation, label: false, placeholder: 'Password Confirmation' %>
   </div>
 
+
   <div class="actions">
     <%= f.submit "Sign up" %>
+      <center class="bar"> </center>
   </div>
 <% end %>
-</div>
 
-<%= render "devise/shared/links" %>
+<center> <%= render "devise/shared/links" %> </center>

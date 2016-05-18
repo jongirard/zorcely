@@ -16,8 +16,8 @@
 
 
         .login-image {
-
-          background-image: asset-url("backs.png");
+background-color: #4F8BFF;
+          background-image: asset-url("tilesblue.jpg");
           background-repeat: no-repeat;
           background-size: cover;
           height: 100%;
@@ -26,11 +26,12 @@
 
           .password-image {
 
-            background-image: asset-url("boxes.png");
+            background-image: asset-url("Creatororange.png");
             background-repeat: no-repeat;
             background-size: cover;
             height: 100%;
-            min-height: 700px;
+
+            min-height: px;
 
 
       }

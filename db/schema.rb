@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160517211316) do
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
     t.string   "company_logo_id"
+
   end
 
   create_table "projects", force: :cascade do |t|
