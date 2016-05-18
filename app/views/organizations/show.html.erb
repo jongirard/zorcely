@@ -27,6 +27,17 @@
     <%= @organization.organization_description %>
   </div>
 
+  <div class="organization projects">
+    <div class="title">
+      Projects:
+    </div>
+    <% @organization.projects.each do |project| %>
+    <%= link_to "#{project.project_name}", project_path(project) %>
+    <%= project.project_summary %>
+    <% end %>
+
+  </div>
+
   <%= link_to "Edit", edit_organization_path %>
 
 </div>

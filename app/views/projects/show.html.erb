@@ -1,0 +1,53 @@
+
+<div class="project container below-cover">
+  <div class="project name">
+    <%= @project.project_name %>
+  </div>
+
+  <div class="project summary">
+    <div class="title">
+      Summary:
+    </div>
+    <div class="block">
+      <%= @project.project_summary %>
+    </div>
+  </div>
+
+  <div class="project description">
+    <div class="title">
+      Description:
+    </div>
+    <%= @project.project_description %>
+  </div>
+
+  <div class="project resource">
+    <div class="title">
+      Resource Requirements:
+    </div>
+    <%= @project.resource_requirements %>
+  </div>
+
+  <div class="project in_kind">
+    <div class="title">
+      In Kind:
+    </div>
+    <%= @project.in_kind %>
+  </div>
+
+  <div class="project volunteer_amount">
+    <div class="title">
+      In Kind:
+    </div>
+    <%= @project.volunteer_amount %>
+  </div>
+
+  <div class="project project_value">
+    <div class="title">
+      Project Value:
+    </div>
+    <%= @project.project_value %>
+  </div>
+
+  <%= link_to "Edit", edit_organization_path %>
+
+</div>

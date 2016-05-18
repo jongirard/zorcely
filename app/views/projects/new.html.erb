@@ -1,6 +1,7 @@
 <% provide(:title, 'Zorcely - Project Manager') %>
 <div class="content">
 <%= simple_form_for @project, :html => {:class => "feature-form debt center-block"} do |f| %>
+<%= hidden_field_tag 'organization_id', params[:organization_id] %>
 				<form role="form">
 					<div class="form-group">
 					<%= f.input :project_name, label: 'Name Of Project:', placeholder: 'Ex: Blood Drive' %>
