@@ -21,24 +21,34 @@
 
 <%= simple_form_for @organization, :html => {:class => "feature-form debt center-block"} do |f| %>
 				<form role="form">
-					<div class="form-group">
+
 
  <h5 class="header center orange-text text-lighten-2">Organization Name</h5>
-					<center>  <%= f.input :organization_name, label: '------------------------------', placeholder: 'Ex: Maine Shelter' %> </center>
+					<center>  <%= f.input :organization_name, label: 'Organization Name', placeholder: 'Ex: Maine Shelter' %> </center>
 					</div>
 
+					<div class="card">
+						<div class="form-group">
+
+
  <h5 class="header center orange-text text-lighten-2">Short summary of Organization</h5>
-          <div class="form-group">
-			<center>	<%= f.input :organization_summary, label: '------------------------------', placeholder: 'Should be 2 lines or less in length' %> </center>
+ <div class="card">
+	 <div class="form-group">
+
+
+			<center>	<%= f.input :organization_summary, label: 'Organization', placeholder: 'Should be 2 lines or less in length' %> </center>
 				</div>
+
  <h5 class="header center orange-text text-lighten-2">Description of Organization:</h5>
-				  <div class="form-group">
-			<center>	<%= f.input :organization_description, label: '------------------------------', placeholder: '' %> </center>
+
+
+
+			<center>	<%= f.input :organization_description, label: 'Description', placeholder: '' %> </center>
 				</div>
 
  <h5 class="header center orange-text text-lighten-2">Non profit number of organization</h5>
 				<div class="form-group">
-			<center>	<%= f.input :nonprofit_number, label: '------------------------------', placeholder: 'Ex: 100485' %> </center>
+			<center>	<%= f.input :nonprofit_number, label: 'profit number', placeholder: 'Ex: 100485' %> </center>
 				</div>
 
 				<div class="form-group">

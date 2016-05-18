@@ -1,31 +1,64 @@
+
+<div class="signup-panel">
+
+
 <% provide(:title, 'Zorcely - Project Manager') %>
+
+
 <div class="content">
+
+
 <%= simple_form_for @project, :html => {:class => "feature-form debt center-block"} do |f| %>
 <%= hidden_field_tag 'organization_id', params[:organization_id] %>
+
+<div class="card">   <h3 class="header center orange-text text-lighten-2">Create a Project</h3> </div>
+<div class="card">
+
 				<form role="form">
 					<div class="form-group">
-					<%= f.input :project_name, label: 'Name Of Project:', placeholder: 'Ex: Blood Drive' %>
+						<h5 class="header center orange-text text-lighten-2">Project Name</h5> </div>
+					<center>	<%= f.input :project_name, label: 'Name Of Project:', placeholder: 'Ex: Blood Drive' %> </center>
 					</div>
-          <div class="form-group">
-				<%= f.input :project_summary, label: 'Short summary of Project:', placeholder: 'Should be 2 lines or less in length' %>
-				</div>
-				  <div class="form-group">
-				<%= f.input :project_description, label: 'Description of Project:', placeholder: '' %>
-				</div>
-				<div class="form-group">
-			<%= f.input :resource_requirements, label: 'Required Resources Type:', placeholder: 'Ex: Volunteer/Expertise' %>
-			</div>
-			<div class="form-group">
-		<%= f.input :in_kind, label: 'Specify In Kind:', placeholder: 'Ex: Contribution' %>
-		</div>
-		<div class="form-group">
-	<%= f.input :volunteer_amount, label: 'Number of Volunteers Needed:', placeholder: 'Ex: 15' %>
-	</div>
-	<div class="form-group">
-<%= f.input :project_value, label: 'Project Value:', placeholder: 'Ex: 30,000' %>
-</div>
 
-				<%= f.submit "Add Organization", :class => "btn btn-success"%>
+<div class="card">
+
+          <div class="form-group">
+						<h5 class="header center orange-text text-lighten-2">Short summary of project</h5> </div>
+
+				<center>	<%= f.input :project_summary, label: 'Short summary of Project:', placeholder: 'Should be 2 lines or less in length' %>	</center>
+				</div>
+				<div class="card">
+				  <div class="form-group">
+						<h5 class="header center orange-text text-lighten-2">Description of Project</h5> </div>
+
+				<center>	<%= f.input :project_description, label: 'Description of Project:', placeholder: '' %> 	</center>
+				</div>
+				<div class="card">
+				<div class="form-group">
+					<h5 class="header center orange-text text-lighten-2">Project Name</h5> </div>
+
+			<center>	<%= f.input :resource_requirements, label: 'Required Resources Type:', placeholder: 'Ex: Volunteer/Expertise' %> 	</center>
+			</div>
+			<div class="card">
+			<div class="form-group">
+				<h5 class="header center orange-text text-lighten-2">Specify In Kind</h5> </div>
+
+		<center>	<%= f.input :in_kind, label: 'Specify In Kind:', placeholder: 'Ex: Contribution' %>	</center>
+		</div>
+		<div class="card">
+		<div class="form-group">
+			<h5 class="header center orange-text text-lighten-2">Number of Volunteers Needed</h5> </div>
+
+		<center> <%= f.input :volunteer_amount, label: 'Number of Volunteers Needed:', placeholder: 'Ex: 15' %> 	</center>
+	</div>
+<div class="card">
+	<div class="form-group">
+		<h5 class="header center orange-text text-lighten-2">Project Value</h5> </div>
+
+	<center> <%= f.input :project_value, label: 'Project Value:', placeholder: 'Ex: 30,000' %> 	</center>
+</div>
+<div class="card">
+			<center>	<%= f.submit "Add Project", :class => "btn btn-success orange"%> </center>
 				<% end %>
 
 </form>

@@ -1,53 +1,58 @@
+<div class="card">   <h3 class="header center orange-text text-lighten-2">Project Details</h3> </div>
+<div class="card">
 
 <div class="project container below-cover">
   <div class="project name">
-    <%= @project.project_name %>
+<center> <h5> <%= @project.project_name %> <h5> </center>
   </div>
+
+
 
   <div class="project summary">
     <div class="title">
-      Summary:
+    <center>   Summary: </center>
     </div>
     <div class="block">
-      <%= @project.project_summary %>
+  <center>  <h5>   <%= @project.project_summary %> <h5> </center>
     </div>
   </div>
 
   <div class="project description">
     <div class="title">
-      Description:
+
+    <center> Description: </center>
     </div>
-    <%= @project.project_description %>
+  <center>  <h5> <%= @project.project_description %> <h5> </center>
   </div>
 
   <div class="project resource">
     <div class="title">
-      Resource Requirements:
+  <center>  Resource Requirements: </center>
     </div>
-    <%= @project.resource_requirements %>
+  <center>  <h5> <%= @project.resource_requirements %> <h5> </center>
   </div>
 
   <div class="project in_kind">
     <div class="title">
-      In Kind:
+  <center> In Kind: </center>
     </div>
-    <%= @project.in_kind %>
+  <center>  <h5> <%= @project.in_kind %> <h5> </center>
   </div>
 
   <div class="project volunteer_amount">
     <div class="title">
-      In Kind:
+  <center> Volunteer Amount: </center>
     </div>
-    <%= @project.volunteer_amount %>
+  <center> <h5>  <%= @project.volunteer_amount %> <h5> </center>
   </div>
 
   <div class="project project_value">
     <div class="title">
-      Project Value:
+    <center>   Project Value: </center>
     </div>
-    <%= @project.project_value %>
+    <center> <h5> <%= @project.project_value %> <h5> </center>
   </div>
 
-  <%= link_to "Edit", edit_organization_path %>
+<center> <h5>  <%= link_to "Edit", edit_organization_path %> <h5> </center>
 
 </div>
