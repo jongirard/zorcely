@@ -1,24 +1,50 @@
+
+
+<div class="home-container">
+
+
+<title>Add</title>
+
+
+<h3 class="header center white-text text-lighten-2">Submit a organization </h3>
+
+
 <% provide(:title, 'Zorcely - Organization Manager') %>
 <div class="content">
+
+
+	<div class="signup-panel">
+	    <div class="card"></div>
+	    <div class="card">
+
+
 <%= simple_form_for @organization, :html => {:class => "feature-form debt center-block"} do |f| %>
 				<form role="form">
 					<div class="form-group">
-					<%= f.input :organization_name, label: 'Name Of Organization:', placeholder: 'Ex: Maine Shelter' %>
+
+
+					<center> <%= f.input :organization_name, label: 'Organization Name:', placeholder: 'Ex: Maine Shelter' %> </center>
 					</div>
+
+
           <div class="form-group">
-				<%= f.input :organization_summary, label: 'Short summary of Organization:', placeholder: 'Should be 2 lines or less in length' %>
+			<center>	<%= f.input :organization_summary, label: 'Short summary of Organization:', placeholder: 'Should be 2 lines or less in length' %> </center>
 				</div>
+
 				  <div class="form-group">
-				<%= f.input :organization_description, label: 'Description of Organization:', placeholder: '' %>
-				</div>
-				<div class="form-group">
-				<%= f.input :nonprofit_number, label: 'Non profit registered number of organization', placeholder: 'Ex: 100485' %>
+			<center>	<%= f.input :organization_description, label: 'Description of Organization:', placeholder: '' %> </center>
 				</div>
 
 				<div class="form-group">
-				<%= f.attachment_field :company_logo %>
+			<center>	<%= f.input :nonprofit_number, label: 'Non profit number of organization', placeholder: 'Ex: 100485' %> </center>
 				</div>
-				<%= f.submit "Add Organization", :class => "btn btn-success"%>
+
+				<div class="form-group">
+			<center>	<%= f.attachment_field :company_logo %> </center>
+				</div>
+
+
+				<center> <%= f.submit "Add Organization", :class => "btn btn-success orange"%> </center>
 				<% end %>
 
 </form>

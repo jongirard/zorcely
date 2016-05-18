@@ -14,12 +14,15 @@
 ActiveRecord::Schema.define(version: 20160517083403) do
 
   create_table "organizations", force: :cascade do |t|
-    t.string   "name"
+    t.string   "guid"
+    t.string   "organization_name"
     t.integer  "nonprofit_number"
-    t.text     "description"
+    t.string   "cover_photo_url"
+    t.text     "organization_summary"
+    t.text     "organization_description"
     t.integer  "user_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.string   "company_logo_id"
   end
 

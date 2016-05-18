@@ -1,10 +1,9 @@
-
-
 <div class="home-container">
 <div class="login-image">
 
   <center> <%= image_tag("ClearZorcely.png", size: "200x200") %> </center>
 
+  <h3 class="header center white-text text-lighten-2">Welcome to Zorcely</h3>
 
   <div class="container login">
     <div class="card"></div>
@@ -19,22 +18,17 @@
     <div class="input-container" >
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
-    <center class="bar"> </center>
+
   </div>
 
-<div class="bar">
 <div class="input-container">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
-    <center class="bar"> </center>
+
   </div>
 
 
-
-
       <div class="input-container">
-
-
 
 
        <%= f.submit "Login" %>
