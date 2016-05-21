@@ -1,46 +1,52 @@
-
-
 <div class="home-container">
 
-	<div class="card">   <h3 class="header center orange-text text-lighten-2">Project Details</h3> </div>
-	<div class="card">
 
-<title>Edit</title>
+<title>Add</title>
 
-<div class="card">   <h3 class="header center orange-text text-lighten-2">Edit</h3> </div>
 <div class="card">
 
+	<h3 class="header center orange-text text-lighten-2">Submit</h3> </div>
+
+<div class="card">
+
+<div>
 
 <% provide(:title, 'Zorcely - Organization Manager') %>
 <div class="content">
 
 
-	<div class="signup-panel">
 	    <div class="card"></div>
-	    <div class="card">
-
 
 
 <%= simple_form_for @organization, :html => {:class => "feature-form debt center-block"} do |f| %>
 				<form role="form">
-					<div class="form-group">
 
- <h5 class="header center orange-text text-lighten-2">Organization Name</h5>
-					<center>  <%= f.input :organization_name, label: '------------------------------', placeholder: 'Ex: Maine Shelter' %> </center>
+
+ <h5 class="header center orange-text text-lighten-2">Organization </h5>
+					<center>  <%= f.input :organization_name, label: 'Organization Name', placeholder: 'Ex: Maine Shelter' %> </center>
 					</div>
 
- <h5 class="header center orange-text text-lighten-2">Short summary of Organization</h5>
-          <div class="form-group">
-			<center>	<%= f.input :organization_summary, label: '------------------------------', placeholder: 'Should be 2 lines or less in length' %> </center>
+					<div class="card">
+
+<div>
+
+ <h5 class="header center orange-text text-lighten-2">Short Summary </h5>
+
+<div>
+
+			<center>	<%= f.input :organization_summary, label: 'Organization', placeholder: 'Should be 2 lines or less in length' %> </center>
 				</div>
- <h5 class="header center orange-text text-lighten-2">Description of Organization:</h5>
-				  <div class="form-group">
-			<center>	<%= f.input :organization_description, label: '------------------------------', placeholder: '' %> </center>
+
+ <h5 class="header center orange-text text-lighten-2">Description</h5>
+
+
+
+			<center>	<%= f.input :organization_description, label: 'Description', placeholder: '' %> </center>
 				</div>
 
  <h5 class="header center orange-text text-lighten-2">Non profit number of organization</h5>
 				<div class="form-group">
-			<center>	<%= f.input :nonprofit_number, label: '------------------------------', placeholder: 'Ex: 100485' %> </center>
+			<center>	<%= f.input :nonprofit_number, label: 'profit number', placeholder: 'Ex: 100485' %> </center>
 				</div>
 
 				<div class="form-group">
@@ -48,14 +54,14 @@
 				</div>
 
 
-				<center> <%= f.submit "Submit Changes", :class => "btn btn-success orange"%> </center>
+				<center> <%= f.submit "Submit Organization", :class => "btn btn-success orange"%> </center>
 				<% end %>
 
-</form>
 </div>
 
+
 <footer  class="page-footer orange">
-          <div class="container">
+          <div class="home-container">
             <div class="row">
                 <h5 class="white-text">ZORCELY</h5>
                 <p class="grey-text text-lighten-4 ">Helping your organization succeed </p>

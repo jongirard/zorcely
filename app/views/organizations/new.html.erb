@@ -1,45 +1,43 @@
-
-
 <div class="home-container">
 
 
 <title>Add</title>
 
-<div class="card">   <h3 class="header center orange-text text-lighten-2">Submit</h3> </div>
+<div class="card">
+
+	<h3 class="header center orange-text text-lighten-2">Submit</h3> </div>
 
 <div class="card">
 
+<div>
 
 <% provide(:title, 'Zorcely - Organization Manager') %>
 <div class="content">
 
 
-	<div class="signup-panel">
 	    <div class="card"></div>
-	    <div class="card">
 
 
 <%= simple_form_for @organization, :html => {:class => "feature-form debt center-block"} do |f| %>
 				<form role="form">
 
 
- <h5 class="header center orange-text text-lighten-2">Organization Name</h5>
+ <h5 class="header center orange-text text-lighten-2">Organization </h5>
 					<center>  <%= f.input :organization_name, label: 'Organization Name', placeholder: 'Ex: Maine Shelter' %> </center>
 					</div>
 
 					<div class="card">
 
+<div>
 
+ <h5 class="header center orange-text text-lighten-2">Short Summary </h5>
 
- <h5 class="header center orange-text text-lighten-2">Short summary of Organization</h5>
- <div class="card">
-
-
+<div>
 
 			<center>	<%= f.input :organization_summary, label: 'Organization', placeholder: 'Should be 2 lines or less in length' %> </center>
 				</div>
 
- <h5 class="header center orange-text text-lighten-2">Description of Organization:</h5>
+ <h5 class="header center orange-text text-lighten-2">Description</h5>
 
 
 
@@ -59,11 +57,11 @@
 				<center> <%= f.submit "Submit Organization", :class => "btn btn-success orange"%> </center>
 				<% end %>
 
-</form>
 </div>
 
+
 <footer  class="page-footer orange">
-          <div class="container">
+          <div class="home-container">
             <div class="row">
                 <h5 class="white-text">ZORCELY</h5>
                 <p class="grey-text text-lighten-4 ">Helping your organization succeed </p>
